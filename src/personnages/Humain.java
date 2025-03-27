@@ -12,7 +12,7 @@ public class Humain {
 		this.nom = nom;
 	}
 
-	private void parler(String texte) {
+	protected void parler(String texte) {
 		System.out.println("("+ nom + ") - " + texte);
 	}
 	
@@ -33,11 +33,11 @@ public class Humain {
 		parler("Mmmm, un bon verre de " + boisson + " ! GLOUPS !");
 	}
 	
-	private void gagnerArgent(int gain) {
+	protected void gagnerArgent(int gain) {
 		argent += gain;
 	}
 	
-	private void perdreArgent(int perte) {
+	protected void perdreArgent(int perte) {
 		argent -= perte;
 	}
 	

@@ -4,7 +4,6 @@ public class Humain {
 	private int argent;
 	private String boisson;
 	private String nom;
-	private String[] bien = {};
 	
 	public Humain(int argent, String boisson, String nom) {
 		this.argent = argent;

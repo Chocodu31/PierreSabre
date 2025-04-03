@@ -25,7 +25,8 @@ public class Ronin extends Humain {
 			honneur+=1;
 			parler("Je t'ai eu petit yakuza !");
 		} else {
-			adversaire.gagner(argent);
+			parler("J'ai perdu contre ce yakuza, mon honneur et ma bourse ont en pris un coup.");
+			honneur--;
 			perdreArgent(argent);
 		}
 	}

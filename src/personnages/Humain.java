@@ -80,12 +80,12 @@ public class Humain {
 
 	public void listerConnaissance() {
 
-		String texte = new String("Je connais beaucoup de monde dont : ");
+		StringBuilder texte = new StringBuilder("Je connais beaucoup de monde dont : ");
 		for (int i = 0; i < nbConnaissance-1; i++) {
-			texte += memoire[i].getNom() + ", ";
+			texte.append(memoire[i].getNom() + ", ");
 		}
-		texte += memoire[nbConnaissance-1].getNom();
-		this.parler(texte);
+		texte.append(memoire[nbConnaissance-1].getNom());
+		this.parler(texte.toString());
 	}
 
 }
